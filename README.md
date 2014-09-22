@@ -57,10 +57,3 @@ Contents
 * a phpunit bootstrap file;
 * a csv file iterator;
 * a migrate helper to load csv data sources.
-
-
-Requirements
-------------
-* A Bash-compatible shell
-* PHP 5.3.3+
-* PHP extensions: json, curl
