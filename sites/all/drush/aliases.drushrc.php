@@ -12,15 +12,16 @@
  */
 
 $loc_db_url = 'mysql://__name___loc:__name___loc@127.0.0.1/__name___loc';
+$root = realpath(__DIR__ . '/../../..');
 
 $aliases['__name__.loc'] = array(
   'uri' => 'loc.__domain__',
-  'root' => '__docroot__',
+  'root' => $root,
   'db-url' => $loc_db_url,
   'path-aliases' => array(
-    '%drush' => '__docroot__/vendor/drush/drush',
-    '%drush-script' => '__docroot__/bin/drush',
-    '%dump-dir' => '__docroot__/dumps',
+    '%drush' => $root . '/vendor/drush/drush',
+    '%drush-script' => $root . '/bin/drush',
+    '%dump-dir' => $root . '/dumps',
     '%files' => 'sites/default/files',
   ),
   'target-command-specific' => array(
